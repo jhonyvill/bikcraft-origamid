@@ -8,12 +8,6 @@
   grid-template-columns: 1fr 1fr;
   gap: 0 2.5rem;
   color: inherit;
-  max-width: 1200px;
-  padding-left: 1.125rem;
-  padding-right: 1.125rem;
-  margin-left: auto;
-  margin-right: auto;
-  box-sizing: border-box;
 }
 
 .intro-content{
