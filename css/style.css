@@ -1,11 +1,15 @@
+/* Global */
 @import "./global/global.css";
 @import "./utils/typography.css";
 @import "./utils/colors.css";
-
 @import "./global/header.css";
 
+/* Utility */
 @import "./utils/components.css";
+
+/* Home */
 @import "./home/intro.css";
 @import "./bicycles/bicycles.css";
 @import "./home/technology.css";
 @import "./home/partners.css";
+@import "./home/testimony.css";
