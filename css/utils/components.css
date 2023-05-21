@@ -21,10 +21,20 @@
   font-family: "Poppins";
   font-weight: 600; */
   font: 600 1.125rem/1.35 'Poppins', sans-serif;
+  max-width: max-content;
 }
 
 .button:hover{
   background: linear-gradient(#ffb60d, #e59317);
+}
+
+.button.secondary{
+  background: var(--color-10);
+  color: var(--color-2);
+}
+
+.button.secondary:hover{
+  background: var(--color-9);
 }
 
 @media(max-width:600px){
