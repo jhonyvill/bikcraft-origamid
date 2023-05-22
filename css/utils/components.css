@@ -8,6 +8,7 @@
   box-sizing: border-box;
 }
 
+/*Button*/
 .button{
   display: inline-block;
   color: var(--color-primary-5);
@@ -44,6 +45,7 @@
   }
 }
 
+/*Link*/
 .link{
   display: inline-block;
   text-transform: uppercase;
@@ -61,4 +63,32 @@
 
 .link:hover{
   color: var(--color-0);
+}
+
+/*Internal Title*/
+.title-bg{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--color-11);
+}
+
+.title h1 {
+  color: var(--color-0);
+}
+
+.title p{
+  color: var(--color-5);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+@media(max-width: 800px){
+  .title-bg{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .title p{
+    font-size: 1rem;
+    text-transform: lowercase;
+  }
 }
