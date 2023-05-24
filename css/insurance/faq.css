@@ -1,0 +1,58 @@
+.faq{
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+
+.faq h2{
+  margin-bottom: 3.75rem;
+}
+
+.faq dl > div{
+  padding: 1.25rem;
+  border-radius: 4px;
+}
+
+.faq dl > div:nth-child(odd){
+  background-color: var(--color-1);
+}
+
+.faq dt{
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.faq dt::before{
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--color-primary-1);
+}
+
+.faq dt::after{
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 6px;
+  background-image: url('../../img/icons/arrow-open.svg');
+}
+
+.faq dd{
+  padding-left: 1.25rem;
+  padding-top: 1rem;
+  max-width: 80ch;
+}
+
+@media(max-width:800px){
+  .faq{
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+  
+  .faq h2{
+    margin-bottom: 2.5rem;
+  }
+}
