@@ -7,6 +7,7 @@
 
 /* Utility */
 @import "./utils/components.css";
+@import "./utils/form.css";
 
 /* Home */
 @import "./home/intro.css";
@@ -29,3 +30,6 @@
 
 /*Terms*/
 @import "./terms/terms.css";
+
+/*Contact*/
+@import "./contact/contact.css";
