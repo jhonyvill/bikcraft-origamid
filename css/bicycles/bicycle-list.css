@@ -17,6 +17,10 @@
   margin-right: auto;
 }
 
+#bicycle .bicycle-list ul{
+  padding: 0 0 1.25rem 0;
+}
+
 .bicycle-list li{
   flex: 1;
   min-width: 280px;
