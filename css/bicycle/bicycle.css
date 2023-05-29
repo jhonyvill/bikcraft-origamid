@@ -14,7 +14,7 @@
 .bicycle-image {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 1.25rem;
 }
 .bicycle-image img {
   flex: 1;
@@ -27,10 +27,10 @@
 .bicycle-content h2 {
   text-transform: uppercase;
   letter-spacing: 0.015em;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 .bicycle-content > p {
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
 }
 
 .bicycle-buy {
@@ -38,8 +38,8 @@
   grid-template-columns: max-content auto;
   align-items: center;
   justify-items: start;
-  gap: 8px 12px;
-  margin-bottom: 40px;
+  gap: 0.5rem 0.75rem;
+  margin-bottom: 2.5rem;
 }
 .bicycle-buy a {
   grid-row: span 2;
@@ -47,38 +47,38 @@
 .bicycle-buy span {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
   background-color: var(--color-12);
-  border-radius: 4px;
-  padding: 4px 8px;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
 }
 
 .bicycle-information,
 .bicycle-specification {
-  padding: 32px;
+  padding: 2rem;
   background-color: var(--color-12);
-  border-radius: 4px;
+  border-radius: 0.25rem;
 }
 
 .bicycle-information {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 32px;
-  margin-bottom: 40px;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
 }
 .bicycle-information img {
-  width: 24px;
-  margin-bottom: 8px;
+  width: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 .bicycle-information h3 {
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 
 .bicycle-specification li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 4px 0;
+  padding: 0.25rem 0;
   border-bottom: 1px solid var(--color-11);
 }
 .bicycle-specification li:last-child {
@@ -92,8 +92,8 @@
 @media (max-width: 800px) {
   .bicycle {
     grid-template-columns: 1fr;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
   .bicycle-image {
     grid-row: 2;
