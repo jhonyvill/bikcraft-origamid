@@ -36,6 +36,7 @@
   display: grid;
   grid-template-columns: 1fr auto;
   place-content: start;
+  background: url('../../img/dec/top-right.svg') no-repeat top right;
 }
 
 .bicycles-content h2 {
@@ -91,6 +92,7 @@
 @media(max-width: 600px){
   .bicycles-content {
     grid-template-columns: 1fr;
+    background: initial;
   }
   .bicycles-content ul {
     font-size: 1rem;

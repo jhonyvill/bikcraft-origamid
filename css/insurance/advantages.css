@@ -1,5 +1,5 @@
 .advantages-bg {
-  background-color: var(--color-12);
+  background: var(--color-12) url('../../img/dec/bottom-right.svg') no-repeat bottom 1.25rem right 1.25rem;
 }
 
 .advantages {
