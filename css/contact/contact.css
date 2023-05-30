@@ -18,7 +18,7 @@
 }
 
 .contact-content {
-  background-color: var(--color-12);
+  background: var(--color-12) url('../../img/dec/bottom-left.svg') no-repeat bottom 1.25rem left 1.25rem;
   border-radius: 5px 0 0 5px;
 }
 
@@ -66,6 +66,14 @@
   padding-left: 1.75rem;
 }
 
+.contact-media img{
+  transition: 0.2s;
+}
+
+.contact-media img:hover{
+  transform: translateY(-3px);
+}
+
 @media (max-width: 800px) {
   .contact-bg {
     background: linear-gradient(var(--color-11) 500px, var(--color-1) 0);
@@ -79,6 +87,7 @@
   }
   .contact-content {
     border-radius: 5px 5px 0 0;
+    background: var(--color-12);
   }
   .contact-form {
     border-radius: 0 0 5px 5px;

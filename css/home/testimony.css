@@ -1,7 +1,7 @@
 .testimony {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: var(--color-primary-1);
+  background: var(--color-primary-1) url('../../img/dec/bottom-right-p.svg') no-repeat bottom 1.25rem right 1.25rem;
   overflow: hidden;
 }
 
@@ -39,6 +39,12 @@
 }
 .testimony-content p::after {
   content: '”';
+}
+
+@media(min-width:1200px){
+  .testimony img {
+    max-height: 540px;
+  }
 }
 
 @media (max-width: 800px) {

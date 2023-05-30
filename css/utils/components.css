@@ -93,6 +93,10 @@
   background-color: var(--color-11);
 }
 
+.title{
+  background: url('../../img/dec/top-right.svg') no-repeat top right 1rem;
+}
+
 .title h1 {
   color: var(--color-0);
 }
@@ -111,5 +115,11 @@
   .title p{
     font-size: 1rem;
     text-transform: lowercase;
+  }
+}
+
+@media(max-width: 600px){
+  .title{
+    background: var(--color-11);
   }
 }
