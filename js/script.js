@@ -9,3 +9,15 @@ function activateLink(link) {
 }
 
 links.forEach(activateLink);
+
+
+// Activate product to budget
+const params = new URLSearchParams(window.location.search)
+function handleParams(param){
+  const element = document.getElementById(param)
+  if(param){
+    element.checked = true;
+  }
+}
+
+params.forEach(handleParams)
