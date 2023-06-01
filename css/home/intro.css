@@ -1,5 +1,5 @@
 .intro-bg{
-  background-color: var(--color-12);
+  background: var(--color-12) url('../../img/dec/bottom-left.svg') no-repeat bottom 8.75rem left 1.25rem;
   box-shadow: inset 0 -7.5rem var(--color-0);
 }
 
@@ -33,8 +33,8 @@
 @media(max-width: 800px){
   .intro-bg{
     background: var(--color-11);
-    padding-top: 40px;
-    box-shadow: inset 0 -60px var(--color-0);
+    padding-top: 2.5rem;
+    box-shadow: inset 0 -3.75rem var(--color-0);
   }
   .intro{
     grid-template-columns: 1fr;

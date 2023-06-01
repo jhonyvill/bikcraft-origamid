@@ -1,64 +1,105 @@
-.bicycle-list{
-  padding: 60px;
-  padding-bottom: 120px;
+.bicycles-bg {
+  background-image: linear-gradient(
+    to right,
+    var(--color-0) 30%,
+    var(--color-11) 0%
+  );
 }
 
-.bicycle-list h2{
-  margin-bottom: 2.5rem;
-}
-
-.bicycle-list ul{
-  display: flex;
-  max-width: 1400px;
+.bicycles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 2.5rem;
-  overflow-x: auto;
-  padding: 0 20px 20px 20px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
 }
 
-.bicycle-list li{
-  flex: 1;
-  min-width: 280px;
+.bicycles-image {
+  display: grid;
 }
 
-.bicycle-list a{
+.bicycles-image img {
+  grid-area: 1/1;
+}
+
+.bicycles-image span {
+  grid-area: 1/1;
+  display: inline-block;
+  place-self: start end;
+  margin-top: 1.25rem;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  border-radius: 4px 0 0 4px;
+  background-color: var(--color-12);
+}
+
+.bicycles-content {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  place-content: start;
+  background: url('../../img/dec/top-right.svg') no-repeat top right;
+}
+
+.bicycles-content h2 {
+  grid-column: 1/-1;
+  margin-bottom: 1.25rem;
+}
+
+.bicycles-content h2::before {
+  content: "";
   display: block;
-}
-
-.bicycle-list img{
-  margin-bottom: 1rem;
-}
-
-.bicycle-list h3{
+  width: 12px;
+  height: 8px;
   margin-bottom: 0.5rem;
+  background-color: var(--color-primary-1);
+}
+
+.bicycles-content p {
+  grid-column: 1/-1;
+  margin-bottom: 2rem;
+}
+
+.bicycles-content ul {
+  display: grid;
+  gap: 1rem;
+}
+
+.bicycles-content li {
   display: flex;
   align-items: center;
 }
 
-.bicycle-list h3::before{
-  content: "";
-  display: inline-block;
-  height: 8px;
-  width: 12px;
-  margin-right: 8px;
-  background-color: var(--color-primary-1);
-  transition: width 0.2s;
+.bicycles-content a {
+  place-self: end;
 }
 
-.bicycle-list a:hover h3::before{
-  width: 24px;
+.bicycles-content img {
+  width: 1.5rem;
+  margin-right: 0.5rem;
 }
 
-.bicycle-list li span{
-  padding: 20px;
-}
-
-@media (max-width: 800px) {
-  .bicycle-list {
-    padding-bottom: 60px;
+@media(max-width: 800px){
+  .bicycles-bg {
+    background: var(--color-11);
   }
-  .bicycle-list ul {
-    gap: 20px;
+  .bicycles {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
+@media(max-width: 600px){
+  .bicycles-content {
+    grid-template-columns: 1fr;
+    background: initial;
+  }
+  .bicycles-content ul {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  .bicycles-content a {
+    place-self: start;
   }
 }

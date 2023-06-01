@@ -8,6 +8,7 @@
   box-sizing: border-box;
 }
 
+/*Button*/
 .button{
   display: inline-block;
   color: var(--color-primary-5);
@@ -22,6 +23,8 @@
   font-weight: 600; */
   font: 600 1.125rem/1.35 'Poppins', sans-serif;
   max-width: max-content;
+  border: none;
+  cursor: pointer;
 }
 
 .button:hover{
@@ -37,6 +40,25 @@
   background: var(--color-9);
 }
 
+.button.arrow{
+  display: flex;
+  align-items: center;
+}
+
+.button.arrow::after{
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  margin-left: 0.75rem;
+  background-image: url('../../img/icons/arrow.svg');
+  transition: 0.2s;
+}
+
+.button.arrow:hover::after{
+  transform: translateX(4px);
+}
+
 @media(max-width:600px){
   .button{
     padding: 0.8rem 1.5rem;
@@ -44,6 +66,7 @@
   }
 }
 
+/*Link*/
 .link{
   display: inline-block;
   text-transform: uppercase;
@@ -61,4 +84,42 @@
 
 .link:hover{
   color: var(--color-0);
+}
+
+/*Internal Title*/
+.title-bg{
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+  background-color: var(--color-11);
+}
+
+.title{
+  background: url('../../img/dec/top-right.svg') no-repeat top right 1rem;
+}
+
+.title h1 {
+  color: var(--color-0);
+}
+
+.title p{
+  color: var(--color-5);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+@media(max-width: 800px){
+  .title-bg{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  .title p{
+    font-size: 1rem;
+    text-transform: lowercase;
+  }
+}
+
+@media(max-width: 600px){
+  .title{
+    background: var(--color-11);
+  }
 }

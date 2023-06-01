@@ -7,6 +7,7 @@
 
 /* Utility */
 @import "./utils/components.css";
+@import "./utils/form.css";
 
 /* Home */
 @import "./home/intro.css";
@@ -15,7 +16,25 @@
 @import "./home/testimony.css";
 
 /*Bicycles*/
+@import "./bicycles/bicycle-list.css";
 @import "./bicycles/bicycles.css";
+
+/*Bicycle*/
+@import "./bicycle/bicycle.css";
+@import "./bicycle/insurance.css";
 
 /*Insurance*/
 @import "./insurance/insurance.css";
+@import "./insurance/advantages.css";
+@import "./insurance/faq.css";
+
+/*Terms*/
+@import "./terms/terms.css";
+
+/*Contact*/
+@import "./contact/contact.css";
+@import "./contact/store.css";
+
+
+/*Budget*/
+@import "./budget/budget.css";

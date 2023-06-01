@@ -35,6 +35,14 @@
   gap: 2rem;
 }
 
+.footer-media img{
+  transition: 0.2s;
+}
+
+.footer-media img:hover{
+  transform: translateY(-3px);
+}
+
 .footer-copy{
   display: block;
   grid-column: 1/-1;

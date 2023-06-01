@@ -1,5 +1,5 @@
 .insurance-bg{
-  background-color: var(--color-11);
+  background: var(--color-11) url('../../img/dec/bottom-left.svg') no-repeat bottom 1.25rem left 1.25rem;
 }
 
 .insurance{
@@ -9,6 +9,10 @@
   grid-template-columns: 1fr 1fr;
   gap: 2.5rem;
   align-items: center;
+}
+
+#insurance .insurance{
+  padding-top: 0px;
 }
 
 .insurance h2{
@@ -63,6 +67,9 @@
 }
 
 @media(max-width: 800px){
+  .insurance-bg{
+    background: var(--color-11)
+  }
   .insurance{
     grid-template-columns: 1fr;
   }
