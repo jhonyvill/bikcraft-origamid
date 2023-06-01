@@ -16,15 +16,19 @@
   background-color: var(--color-1);
 }
 
-.faq dt{
+.faq button{
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: 0.5rem;
   cursor: pointer;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
 }
 
-.faq dt::before{
+.faq button::before{
   content: "";
   display: inline-block;
   width: 12px;
@@ -32,12 +36,18 @@
   background-color: var(--color-primary-1);
 }
 
-.faq dt::after{
+.faq button::after{
   content: "";
   display: inline-block;
   width: 14px;
   height: 6px;
   background-image: url('../../img/icons/arrow-open.svg');
+  transition: 0.3s;
+}
+
+.faq button:hover::after,
+.faq button[aria-expanded="true"]::after{
+  transform: rotate(180deg);
 }
 
 .faq dd{
