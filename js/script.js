@@ -38,3 +38,29 @@ function handleActivateQuestion(event){
 questions.forEach((item) => {
   item.addEventListener('click', handleActivateQuestion)
 })
+
+//Image gallery
+const gallery = document.querySelectorAll('.bicycle-image img')
+
+function handleGalleryClick(event){
+  const image = event.currentTarget;
+  const container = document.querySelector('.bicycle-image')
+
+  let firstImageWidth = gallery[0].width; 
+  for(let index = 0; index < gallery.length; index++){
+    if(gallery[index].width !== firstImageWidth){
+      container.prepend(image)
+      break;
+    }
+  }
+  // Solução apresentada no curso:
+  // const largeMedia = window.matchMedia("(min-width: 1000px)").matches;
+  // if(largeMedia){
+  //   container.prepend(image)
+  // }
+
+}
+
+gallery.forEach((item) => {
+  item.addEventListener('click', handleGalleryClick)
+})
