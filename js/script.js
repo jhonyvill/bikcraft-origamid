@@ -21,3 +21,20 @@ function handleParams(param){
 }
 
 params.forEach(handleParams)
+
+// Activate faq questions
+const questions = document.querySelectorAll('.faq button')
+
+function handleActivateQuestion(event){
+  const question = event.currentTarget;
+  const controls = question.getAttribute('aria-controls')
+  const response = document.getElementById(controls)
+
+  response.classList.toggle('active')
+  const isActiveResponse = response.classList.contains('active')
+  question.setAttribute('aria-expanded', isActiveResponse)
+}
+
+questions.forEach((item) => {
+  item.addEventListener('click', handleActivateQuestion)
+})
