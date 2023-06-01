@@ -50,10 +50,15 @@
   transform: rotate(180deg);
 }
 
-.faq dd{
+.js .faq dd{
+  display: none;
   padding-left: 1.25rem;
   padding-top: 1rem;
   max-width: 80ch;
+}
+
+.js .faq dd.active{
+  display: block;
 }
 
 @media(max-width:800px){
